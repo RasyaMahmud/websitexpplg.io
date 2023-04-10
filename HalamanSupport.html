@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<title>About Page</title>
+</head>
+<body>
+<!-- Support Title -->
+<center>
+<p><h3>I</h3></p>
+<div class="TitleSupport"><p><b>about</b></p></div>
+<hr>
+<br>
+<p>This Is About Page From We Class!</p>
+<br>
+<hr>
+<br>
+<!-- For Go Back -->
+<div class="GoBack">
+	<ul>
+		<li><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a></li>
+		<li><b>Go Back</b></li>
+	</ul>
+</div>
+
+<!-- Dark/Light Mode -->
+			<style>
+				.darkmode {
+					background: #333333;
+					color: white;
+				}
+			</style>
+
+			<script>
+				if(localStorage.getItem('theme') == 'dark')
+					setDarkMode()
+
+				function setDarkMode() {
+					let emoticon = ''
+					let isDark = document.body.classList.toggle('darkmode')
+
+					if(isDark) {
+						emoticon = '☀️'
+						localStorage.setItem('theme', 'dark')
+					} else {
+						emoticon = '🌙'
+						localStorage.removeItem('theme')
+					}
+					document.getElementById('darkBtn').innerHTML = emoticon
+				}
+			</script>
+
+<br>
+<p><h1><b>X PPLG</b></h1></p>
+<p>|</p>
+<p>v</p>
+<p> << 41 Students >> </p>
+<br>
+<p><h3><b>-> Homeroom Teacher <-</b></h3></p>
+<p>(Ester Heni Zachawerus)</p>
+<br>
+<p></h3><b>-> Head of the Class <-</b></h3></p>
+<p>(Mark Dimian Rasyah Mahmud)</p>
+<br>
+<p></h3><b>-> Vice Chairman of the Class <-</b></h3></p>
+<p>(Iren Rasubala)</p>
+<br>
+<p></h3><b>-> Secretary <-</b></h3></p>
+<p>(Nia Rahmadani)</p>
+<br>
+<p></h3><b>-> Treasurer <-</b></h3></p>
+<p>(Yuni N.C. Kakunsi)</p>
+<br>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Thank You Title -->
+<div class="TxtTkS"><p><b>Terima Kasih Sudah Datang.</b></p></div>
+<div class="TxtTken"><p><b>Thank You For Coming.</b></p></div>
+</center>
+<!-- My Copyright -->
+ 	<div id="copyright">
+		<div class="Copyr">
+			&copy; 2023 <b>Smkn 3 Manado.</b> All Rights Reserved.
+		</div>
+	</div>
+
+
+</body>
+</html>
